@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+  </head>
+  <body style='margin : 0px; overflow: hidden; width: 100wh; height: 100vh'>
+
+    <a-scene embedded arjs>
+
+     <a-assets>
+    <img id="my-image" src="underworld_map.png">
+  </a-assets>
+
+  <!-- Using the asset management system. -->
+  <a-image src="#my-image"></a-image>
+
+
+        <a-marker-camera preset='hiro'></a-marker-camera>
+
+
+
+
+
+    </a-scene>
+  </body>
+</html>
