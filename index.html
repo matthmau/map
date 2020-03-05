@@ -18,17 +18,18 @@
     <!-- create your content here. just a box for now -->
       <a-marker preset='hiro'>
          <!-- here define the content to display on top of the marker -->
-         
+         <a-assets>
+    <a-asset-item id="tree-obj" src="mindmap_two.obj"></a-asset-item>
+    <a-asset-item id="tree-mtl" src="mindmap_two.mtl"></a-asset-item>
+  </a-assets>
          <!-- There is something wrong with your GLTF model export -->
          <!-- Export a simple cube first to make sure the export settings are corrects -->
     <!-- <a-entity gltf-model="url(/mindmap.gltf)"></a-entity>-->
         
          <!-- The object model is fine but you need to include the mtl file for colour, etc -->
          <!-- Also scaled it down. -->
-          <a-entity obj-model="obj: url(mindmap_two.obj)"></a-entity>
-          <a-entity obj-model="mtl: url(mindmap_two.mtl)"></a-entity>
-         <a-obj-model src="mindmap_two.obj" scale="0.01"></a-obj-model>
-        <a-obj-model src="mindmap_two.mtl" scale="0.01"></a-obj-model>
+          <a-entity obj-model="obj: mindmap_two.obj"></a-entity>
+          <a-entity obj-model="mtl: mindmap_two.mtl"></a-entity>
 
       </a-marker>
   </a-scene>
