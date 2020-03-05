@@ -25,15 +25,16 @@
 
          <!-- The object model is fine but you need to include the mtl file for colour, etc -->
          <!-- Also scaled it down. -->
-          <!--<a-entity obj-model="obj: url(mindmap_two.obj); mtl: url(mindmap_two.mtl)"></a-entity>-->
-          <a-asset-item id="crate-obj" src="@asset('mindmap_two.obj')"></a-asset-item>
-          <a-asset-item id="crate-mtl" src="@asset('mindmap_two.mtl')"></a-asset-item>
+          <a-entity obj-model="obj: url(mindmap_two.obj)"></a-entity>
+          <a-entity obj-model="mtl: url(mindmap_two.mtl)"></a-entity>
+
         </a-assets>
 
          <!--<a-obj-model src="mindmap_two.obj" scale="0.01"></a-obj-model>-->
         <a-obj-model src="#crate-obj" mtl="#crate-mtl"></a-obj-model>
 
-            <a-marker preset='hiro'></a-marker>
+            <a-marker preset='hiro'>
+</a-marker>
   </a-scene>
     
 </body>
